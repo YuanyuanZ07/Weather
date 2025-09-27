@@ -1,13 +1,15 @@
-package com.example.weather.ui.screen
+package com.example.weather.ui.screens
 
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
-import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import com.example.weather.R
+
 
 @Composable
 fun CurrentWeatherScreen() {
@@ -21,17 +23,19 @@ fun CurrentWeatherScreen() {
         Text("Halifax, Nova Scotia", style = MaterialTheme.typography.bodyLarge, color = MaterialTheme.colorScheme.primary)
         Spacer(modifier = Modifier.height(16.dp))
 
-        // 假图标，可以用 emoji 占位
-        Text("☁", fontSize = 64.sp)
+        Image(
+            painter = painterResource(id = R.drawable.icon_sunny), // 换成 sunny / rain 看效果
+            contentDescription = "Weather Icon",
+            modifier = Modifier.size(80.dp)
+        )
 
         Spacer(modifier = Modifier.height(8.dp))
-        Text("Overcast", style = MaterialTheme.typography.bodyMedium)
 
-        Spacer(modifier = Modifier.height(4.dp))
-        Text("6°C", fontSize = 32.sp, fontWeight = FontWeight.Bold)
+        Text("Sunny", style = MaterialTheme.typography.bodyMedium)
 
-        Spacer(modifier = Modifier.height(4.dp))
-        Text("Feels like 2°C")
-        Text("Wind SW 18 kph")
+        Text("22°C", style = MaterialTheme.typography.headlineLarge)
+
+        Text("Feels like 24°C")
+        Text("Wind SW 7 kph")
     }
 }
