@@ -1,4 +1,4 @@
-package com.example.weather.ui.screens
+package com.example.weather.ui.screen
 
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
