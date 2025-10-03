@@ -24,7 +24,7 @@ fun CurrentWeatherScreen() {
         Spacer(modifier = Modifier.height(16.dp))
 
         Image(
-            painter = painterResource(id = R.drawable.icon_sunny), // 换成 sunny / rain 看效果
+            painter = painterResource(id = R.drawable.icon_sunny),
             contentDescription = "Weather Icon",
             modifier = Modifier.size(80.dp)
         )
