@@ -27,7 +27,8 @@ class MainViewModel : ViewModel() {
                     apiKey = "c611b4e1727d40c394320943251810",
                     city = "Halifax",
                     days = 3,
-                    aqi = "no"
+                    aqi = "no",
+                    alerts = "no"
                 )
                 weatherState = WeatherState.Success(response)
             } catch (e: Exception) {
