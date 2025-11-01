@@ -2,7 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <!-- 网络请求 -->
     <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- 精准定位（我们在代码里请求的是 ACCESS_FINE_LOCATION） -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -13,17 +17,23 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Weather">
+
         <activity
             android:name=".MainActivity"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Weather">
+
             <intent-filter>
+                <!-- 这是启动入口 -->
                 <action android:name="android.intent.action.MAIN" />
 
+                <!-- 这让它出现在桌面并作为第一个打开的Activity -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+
         </activity>
+
     </application>
 
 </manifest>
