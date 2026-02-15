@@ -2,7 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- 网络请求 -->
+    <!-- Network request-->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <!-- Request location permissions -->
@@ -26,10 +26,9 @@
             android:theme="@style/Theme.Weather">
 
             <intent-filter>
-                <!-- 这是启动入口 -->
+
                 <action android:name="android.intent.action.MAIN" />
 
-                <!-- 这让它出现在桌面并作为第一个打开的Activity -->
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
 
