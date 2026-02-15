@@ -42,10 +42,10 @@ class MainActivity : ComponentActivity() {
             WeatherTheme {
                 val viewModel: MainViewModel = viewModel()
 
-                // 请求定位 + 拿经纬度 + 调 ViewModel
+
                 GetLocation(viewModel)
 
-                // 显示天气界面
+
                 DisplayUI(viewModel = viewModel)
             }
         }
