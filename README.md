@@ -140,4 +140,20 @@ Concepts demonstrated:
 ## ▶️ How to Run
 
 1. Clone the repository
+git clone https://github.com/YuanyuanZ07/Weather.git
+
+
+2. Open in **Android Studio**
+
+3. Sync Gradle
+
+4. Run on emulator or Android device
+
+---
+
+## 👩‍💻 Author
+
+**Yuanyuan Zhou**  
+NSCC IT Programming Student  
+Halifax, Nova Scotia
 
